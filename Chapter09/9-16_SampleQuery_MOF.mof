@@ -1,0 +1,21 @@
+//********************************
+//Created by SMS Recipes Exporter
+//********************************
+
+
+#pragma namespace("\\\\MOFSMSSERVER\\root\\SMS\\site_MOFSMSSITECODE")
+
+
+// **** Class : SMS_Query ****
+
+instance of SMS_Query
+{
+    Comments = "";
+    Expression = "select MACAddresses, Name from  SMS_R_System order by MACAddresses";
+    LimitToCollectionID = "";
+    Name = "All Systems with MAC addresses";
+    QueryID = "";
+    TargetClassName = "SMS_R_System";
+};
+
+// **** End ****

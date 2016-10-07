@@ -1,0 +1,13 @@
+select
+    SMS_G_System_SYSTEM.Name,
+    SMS_G_System_WORKSTATION_STATUS.LastHardwareScan
+from  SMS_R_System inner join SMS_G_System_SYSTEM on
+    SMS_G_System_SYSTEM.ResourceID = SMS_R_System.ResourceId
+    inner join SMS_G_System_WORKSTATION_STATUS on
+    SMS_G_System_WORKSTATION_STATUS.ResourceID =
+    SMS_R_System.ResourceId
+WHERE
+    (datediff(day,
+    SMS_G_System_WORKSTATION_STATUS.LastHardwareScan,
+    getdate()) >= 30)
+Order by SMS_G_System_WORKSTATION_STATUS.LastHardwareScan DESC

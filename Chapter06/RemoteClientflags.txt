@@ -1,0 +1,18 @@
+RemoteClientFlags
+
+When a distribution point is available locally
+A Run program from distribution point
+B Download program from distribution point
+
+When no distribution point is available locally
+C do not run program
+D download program from a remote distribution point
+E run program from a remote distribution point
+
+
+default:
+AC = 40
+AD = 72
+AE = 136
+BC = 48
+BD = 80

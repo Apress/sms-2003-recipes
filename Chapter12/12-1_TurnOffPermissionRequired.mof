@@ -1,0 +1,16 @@
+#pragma namespace("\\\\.\\root\\ccm\\policy\\machine\\requestedconfig")
+
+[CCM_Policy_PartialPolicy(true)]
+instance of CCM_RemoteToolsConfig
+
+{
+
+
+
+PolicySource = "local";
+Type = 1;
+
+[ccm_policy_override(TRUE)]
+PermissionRequired = false;
+
+};
